@@ -2,6 +2,8 @@ import Image from "next/image";
 import { NavbarDemo } from "@/app/Navbar";
 import { MacbookScrollDemo } from "@/app/MacbookScrollDemo";
 import { InfiniteMovingCardsDemo } from "@/app/InfiniteMovingCards";
+import { StickyScrollRevealDemo } from "@/app/StickyScrollReveal";
+import { HoverBorderGradientDemo } from "@/app/HoverBorderGradient";
 
 export default function Home() {
   return (
@@ -9,6 +11,9 @@ export default function Home() {
       <NavbarDemo/>
       <MacbookScrollDemo/>
       <InfiniteMovingCardsDemo/>
+      <StickyScrollRevealDemo/>
+      <HoverBorderGradientDemo/>
+        
     </main>
   );
 }
