@@ -10,7 +10,7 @@ export function InfiniteMovingCardsDemo() {
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="slow"
+        speed="fast"
       />
     </div>
   );
@@ -25,10 +25,10 @@ const testimonials = [
     image:"https://picsum.photos/id/1019/1000/600/"
   },
   {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    // quote:
+    //   "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+    // name: "William Shakespeare",
+    // title: "Hamlet",
     image:"/petver-logo.png"
   }
 ];
