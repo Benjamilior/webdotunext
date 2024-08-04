@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import Image from "next/image"; // Importar el componente Image
 
 export const InfiniteMovingCards = ({
   items,
@@ -11,9 +12,10 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
-    name: string;
-    title: string;
+    quote?: string;
+    name?: string;
+    title?: string;
+    image?: string; // Nueva propiedad opcional para la imagen
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -26,7 +28,9 @@ export const InfiniteMovingCards = ({
   useEffect(() => {
     addAnimation();
   }, []);
+
   const [start, setStart] = useState(false);
+
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -43,6 +47,7 @@ export const InfiniteMovingCards = ({
       setStart(true);
     }
   }
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -58,6 +63,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -69,6 +75,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   return (
     <div
       ref={containerRef}
@@ -94,6 +101,15 @@ export const InfiniteMovingCards = ({
             }}
             key={item.name}
           >
+            {item.image && (
+              <Image
+                src={item.image}
+                alt={item.name}
+                width={80} // Ajusta el tamaño según sea necesario
+                height={80} // Ajusta el tamaño según sea necesario
+                className="mb-4 rounded-full object-cover"
+              />
+            )}
             <blockquote>
               <div
                 aria-hidden="true"
