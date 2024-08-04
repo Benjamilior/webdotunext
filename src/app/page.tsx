@@ -4,6 +4,9 @@ import { MacbookScrollDemo } from "@/app/MacbookScrollDemo";
 import { InfiniteMovingCardsDemo } from "@/app/InfiniteMovingCards";
 import { StickyScrollRevealDemo } from "@/app/StickyScrollReveal";
 import { HoverBorderGradientDemo } from "@/app/HoverBorderGradient";
+import { Footer } from "./footer";
+import { SignupFormDemo } from "./form";
+import { Testimonios } from "../components/ui/Testimonios";
 
 export default function Home() {
   return (
@@ -13,7 +16,9 @@ export default function Home() {
       <InfiniteMovingCardsDemo/>
       <StickyScrollRevealDemo/>
       <HoverBorderGradientDemo/>
-        
+      <Testimonios/>
+      <SignupFormDemo/>
+      <Footer/>
     </main>
   );
 }
