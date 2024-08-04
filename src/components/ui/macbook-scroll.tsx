@@ -60,7 +60,7 @@ export const MacbookScroll = ({
     [0, 0.3],
     [0.6, isMobile ? 1 : 1.5]
   );
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 1500]);
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 1200]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -68,7 +68,7 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[200vh]  flex flex-col items-center py-0 md:py-80 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="min-h-[150vh]  flex flex-col items-center py-0 md:py-20 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
     >
       <motion.h2
         style={{
@@ -78,9 +78,9 @@ export const MacbookScroll = ({
         className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center"
       >
         {title || (
-          <span>
-            This Macbook is built with Tailwindcss. <br /> No kidding.
-          </span>
+         <span>
+         Inteligencia de precios para aumentar tus ventas <br /> Automatizamos el proceso de analizar a tu competencia y nos aseguramos de que tomes decisiones estratégicas que impulsen el crecimiento de tu negocio.
+        </span>
         )}
       </motion.h2>
       {/* Lid */}
@@ -113,7 +113,7 @@ export const MacbookScroll = ({
         {showGradient && (
           <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
         )}
-        {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
+       
       </div>
     </div>
   );
@@ -167,7 +167,7 @@ export const Lid = ({
         <div className="absolute inset-0 bg-[#272729] rounded-lg" />
         <Image
           src={src as string}
-          alt="aceternity logo"
+          alt="dotu logo"
           fill
           className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
         />
@@ -617,7 +617,7 @@ export const OptionKey = ({ className }: { className: string }) => {
       fill="none"
       version="1.1"
       id="icon"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns=""
       viewBox="0 0 32 32"
       className={className}
     >
@@ -652,7 +652,7 @@ const AceternityLogo = () => {
       height="65"
       viewBox="0 0 66 65"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns=""
       className="h-3 w-3 text-white"
     >
       <path

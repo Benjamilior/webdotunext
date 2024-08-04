@@ -8,11 +8,11 @@ export function MacbookScrollDemo() {
       <MacbookScroll
         title={
           <span>
-            This Macbook is built with Tailwindcss. <br /> No kidding.
+             Inteligencia de precios para aumentar tus ventas <br /> Automatizamos el proceso de analizar a tu competencia y nos aseguramos de que tomes decisiones estratégicas que impulsen el crecimiento de tu negocio.
           </span>
         }
         badge={
-          <Link href="https://peerlist.io/manuarora">
+          <Link href="">
             <Badge className="h-10 w-10 transform -rotate-12" />
           </Link>
         }
@@ -30,7 +30,7 @@ const Badge = ({ className }: { className?: string }) => {
       height="24"
       viewBox="0 0 56 56"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns=""
       className={className}
     >
       <path

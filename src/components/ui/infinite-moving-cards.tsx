@@ -91,14 +91,14 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full flex-shrink-0"
+            className="w-[200px] max-w-full flex-shrink-0" //Tamaño
             key={idx} // Usa idx como key si image no es único
           >
             <Image
               src={item.image}
               alt={`Image ${idx}`}
-              width={350} // Ajusta el tamaño según sea necesario
-              height={200} // Ajusta el tamaño según sea necesario
+              width={200} // Ajusta el tamaño según sea necesario //Tamaño
+              height={150} // Ajusta el tamaño según sea necesario //Tamaño
               className="object-cover w-full h-full"
             />
           </li>
