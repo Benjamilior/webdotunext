@@ -7,17 +7,21 @@ import { HoverBorderGradientDemo } from "@/app/HoverBorderGradient";
 import { Footer } from "./footer";
 import { SignupFormDemo } from "./form";
 import { Testimonios } from "../components/ui/Testimonios";
+import "./globals.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 pb-0">
       <NavbarDemo/>
       <MacbookScrollDemo/>
       <InfiniteMovingCardsDemo/>
       <StickyScrollRevealDemo/>
       <HoverBorderGradientDemo/>
+
       <Testimonios/>
+     
       <SignupFormDemo/>
+     
       <Footer/>
     </main>
   );
