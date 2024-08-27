@@ -7,6 +7,7 @@ import { HoverBorderGradientDemo } from "@/app/HoverBorderGradient";
 import { Footer } from "./footer";
 import { SignupFormDemo } from "./form";
 import { Testimonios } from "../components/ui/Testimonios";
+import Component  from "../components/ui/ScrolljackingLayout";
 import "./globals.css";
 
 export default function Home() {
@@ -16,11 +17,13 @@ export default function Home() {
       <MacbookScrollDemo/>
       <InfiniteMovingCardsDemo/>
       <StickyScrollRevealDemo/>
+     
       <HoverBorderGradientDemo/>
 
       <Testimonios/>
      
       <SignupFormDemo/>
+      <Component/>
      
       <Footer/>
     </main>
