@@ -7,9 +7,8 @@ import { HoverBorderGradientDemo } from "@/app/HoverBorderGradient";
 import { Footer } from "./footer";
 import { SignupFormDemo } from "./form";
 import { Testimonios } from "../components/ui/Testimonios";
-import Component  from "../components/ui/ScrolljackingLayout";
 import "./globals.css";
-import  ScrolljackingContainer  from "../components/ui/ScrolljackingLayout";
+import  Component  from "../components/ui/ScrolljackingLayout";
 
 export default function Home() {
   return (
@@ -17,25 +16,13 @@ export default function Home() {
       <NavbarDemo/>
       <MacbookScrollDemo/>
       <InfiniteMovingCardsDemo/>
-      <StickyScrollRevealDemo/>
-     
+      <Component></Component>
+      {/* <StickyScrollRevealDemo/> */}
       <HoverBorderGradientDemo/>
 
       <Testimonios/>
      
       <SignupFormDemo/>
-      <Component/>
-      <ScrolljackingContainer>
-        {/* Aquí van las secciones con scrolljacking */}
-        <section>
-          {/* Contenido de la primera sección */}
-        </section>
-        <section>
-          {/* Contenido de la segunda sección */}
-        </section>
-        {/* Más secciones */}
-      </ScrolljackingContainer>
-     
       <Footer/>
     </main>
   );

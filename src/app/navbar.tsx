@@ -16,20 +16,10 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed  max-w-4xl inset-x-0 mx-auto z-50", className)}
+      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
-      
       <Menu setActive={setActive}>
-
-      <MenuItem setActive={setActive} active={active} item="">
-        <div className="flex flex-col items-center space-y-4 text-sm">
-        <img src="/public/dotu_morado.svg" alt="Dotu Morado" className="w-16 h-16" />
-       </div>
-        </MenuItem>
-
-
         <MenuItem setActive={setActive} active={active} item="Services">
-        
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
             <HoveredLink href="/interface-design">Interface Design</HoveredLink>
@@ -37,7 +27,6 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div>
         </MenuItem>
-
         <MenuItem setActive={setActive} active={active} item="Products">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
           <HoveredLink href="/hobby">Hobby</HoveredLink>
@@ -46,7 +35,6 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
-
         <MenuItem setActive={setActive} active={active} item="Pricing">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
