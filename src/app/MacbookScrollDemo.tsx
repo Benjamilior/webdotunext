@@ -1,15 +1,13 @@
 import React from "react";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import Link from "next/link";
-
+import Component from "./forMacbook";
 export function MacbookScrollDemo() {
   return (
-    <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
+    <div className="overflow-hidden bg-gradient-to-br from-purple-700 to-indigo-900 dark:bg-[#0B0B0F] bg-white w-full">
       <MacbookScroll
         title={
-          <span>
-             Inteligencia de precios para aumentar tus ventas <br /> Automatizamos el proceso de analizar a tu competencia y nos aseguramos de que tomes decisiones estratégicas que impulsen el crecimiento de tu negocio.
-          </span>
+          <Component></Component>
         }
         badge={
           <Link href="">

@@ -58,6 +58,13 @@
     --chart-5: 340 75% 55%;
   }
 }
+/* styles/globals.css */
+@import "~@fontsource/montserrat/index.css"; /* Importa todas las variantes de la fuente */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 @layer base {
   * {

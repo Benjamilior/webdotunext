@@ -18,7 +18,35 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       colors: {
+        primarydotu: {
+          DEFAULT: '#070269', // Color principal
+          light: '#070269',   // Versión más clara
+          dark: '#070269',    // Versión más oscura
+        },
+        secondarydotu: {
+          DEFAULT: '#2f026c',
+          light: '#2f026c',
+          dark: '#2f026c',
+        },
+        thirddotu: {
+          DEFAULT: '#ff9100',
+          light: '#ff9100',
+          dark: '#ff9100',
+        },
+        fourthdotu: {
+          DEFAULT: '#8455f6',
+          light: '#8455f6',
+          dark: '#8455f6',
+        },
+        fifthdotu: {
+          DEFAULT: '#f2f4f5',
+          light: '#f2f4f5',
+          dark: '#f2f4f5',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -78,3 +106,4 @@ const config = {
 } satisfies Config
 
 export default config
+
