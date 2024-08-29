@@ -23,6 +23,10 @@ const config: Config = {
       },
     },
     extend: {
+      inset: {
+      'custom-top': '1900px', // Personaliza este valor según tus necesidades
+      'custom-left': '5rem', // Personaliza este valor según tus necesidades
+    },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },

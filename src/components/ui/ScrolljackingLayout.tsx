@@ -31,30 +31,10 @@ export default function Component() {
     return () => observer.disconnect()
   }, [])
 
-  const sections = [
-    {
-      title: "El Mejor Nombre de una Seccion",
-      subtitle: "1. Posicionamiento (COLOCAR IMG DE LOS KPI)",
-      content: "Descubre oportunidades valiosas para maximizar tus ventas y adelantarte a tus competidores. Dotu te ofrece una visión clara y detallada de cómo se posicionan tus precios en el mercado, así podrás reaccionar a tiempo y aumentar tu competitividad.",
-      imageLeft: true,
-      ctaText: "Descubre más"
-    },
-    {
-      title: "2. Alerta de variación de precio",
-      content: "Mantente siempre un paso adelante de la competencia con nuestras alertas personalizadas de variación de precios. Recibe notificaciones en tiempo real cuando ocurran cambios significativos en los precios de tus productos y los de la competencia.",
-      imageLeft: false,
-      ctaText: "Configura alertas"
-    },
-    {
-      title: "3. Accion Sugerida",
-      content: "Nuestro sistema analiza continuamente los datos de precios y te ofrece sugerencias concretas y personalizadas sobre cómo ajustar tus precios para aumentar tus ingresos y mejorar tu competitividad. Ya sea una pequeña reducción para captar más clientes o un ajuste estratégico para maximizar tus márgenes, nuestras recomendaciones te proporcionan la guía necesaria para tomar decisiones efectivas y oportunas. Optimiza tus precios de manera inteligente y mantén a tu negocio en la cima del mercado.",
-      imageLeft: true,
-      ctaText: "Optimiza ahora"
-    }
-  ]
-
   return (
+    
     <div className="w-full bg-gradient-to-b from-gray-50 to-gray-100">
+      <div className='bg-primarydotu w-full mt-[3px] h-10'></div>
       {sections.map((section, index) => (
         <div
           key={index}
@@ -90,3 +70,24 @@ export default function Component() {
     </div>
   )
 }
+const sections = [
+  {
+    title: "El Mejor Nombre de una Seccion",
+    subtitle: "1. Posicionamiento (COLOCAR IMG DE LOS KPI)",
+    content: "Descubre oportunidades valiosas para maximizar tus ventas y adelantarte a tus competidores. Dotu te ofrece una visión clara y detallada de cómo se posicionan tus precios en el mercado, así podrás reaccionar a tiempo y aumentar tu competitividad.",
+    imageLeft: true,
+    ctaText: "Descubre más"
+  },
+  {
+    title: "2. Alerta de variación de precio",
+    content: "Mantente siempre un paso adelante de la competencia con nuestras alertas personalizadas de variación de precios. Recibe notificaciones en tiempo real cuando ocurran cambios significativos en los precios de tus productos y los de la competencia.",
+    imageLeft: false,
+    ctaText: "Configura alertas"
+  },
+  {
+    title: "3. Accion Sugerida",
+    content: "Nuestro sistema analiza continuamente los datos de precios y te ofrece sugerencias concretas y personalizadas sobre cómo ajustar tus precios para aumentar tus ingresos y mejorar tu competitividad. Ya sea una pequeña reducción para captar más clientes o un ajuste estratégico para maximizar tus márgenes, nuestras recomendaciones te proporcionan la guía necesaria para tomar decisiones efectivas y oportunas. Optimiza tus precios de manera inteligente y mantén a tu negocio en la cima del mercado.",
+    imageLeft: true,
+    ctaText: "Optimiza ahora"
+  }
+]

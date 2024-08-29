@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Component() {
   return (
-    <div className=" relative overflow-hidden text-white py-16 px-4 sm:mt-[200px] mb-[50px] sm:px-6 position-absolute lg:px-8">
+    <div className=" mt-[600px] relative overflow-hidden text-white py-16 px-4 sm:mt-[200px] mb-[50px] sm:px-6 position-absolute lg:px-8">
       <div className="relative z-10 max-w-4xl mx-auto ">
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-center mb-8">
           <span className="block mb-2">Inteligencia de precios</span>
