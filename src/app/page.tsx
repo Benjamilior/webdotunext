@@ -6,7 +6,7 @@ import  ComponentData from "../app/data";
 import { Footer } from "./footer";
 import Form from "./form";
 import { HeroScrollDemo} from "@/app/tablet";
-import { Testimonios } from "../components/ui/Testimonios";
+import  Testimonios  from "../components/ui/Testimonios";
 import "./globals.css";
 import  Component  from "../components/ui/ScrolljackingLayout";
 import {InfiniteMovingCardsDemo} from "../app/infinitemovingcard";

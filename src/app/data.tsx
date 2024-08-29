@@ -3,7 +3,7 @@ import { ArrowUpIcon, UsersIcon, LineChartIcon, BarChartIcon } from "lucide-reac
 
 export default function Component() {
   return (
-    <div className="w-full bg-gradient-to-br from-purple-700 to-indigo-900 min-h-screen sm:min-h-[500px] py-12 flex items-center justify-center">
+    <div className="w-full bg-gradient-to-br from-purple-700 to-indigo-900  sm:min-h-[500px] py-12 flex items-center justify-center">
       <div className="max-w-7xl w-full px-4">
         <h1 className="text-4xl font-bold text-white text-center mb-8">Nuestro Impacto</h1>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
