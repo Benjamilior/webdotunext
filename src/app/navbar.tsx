@@ -28,10 +28,10 @@ export default function Navbar() {
               <Link href="https://www.linkedin.com/company/dotu-io" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
                 Quiénes somos
               </Link>
-              <Link href="/clientes" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
+              <Link href="/c" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
                 Producto
               </Link>
-              <Link href="/clientes" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
+              <Link href="#clientes" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
                 Clientes
               </Link>
               <Link href="/pricing" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
