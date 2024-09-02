@@ -7,7 +7,7 @@ export default function Component() {
       <div className="relative z-10 max-w-4xl mx-auto ">
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-center mb-8">
           <span className="block mb-2">Inteligencia de precios</span>
-          <span className="block text-purple-300">para aumentar tus ventas</span>
+          <span className="block ">para aumentar tus ventas</span>
         </h1>
         <p className="mt-6 text-xl sm:text-2xl text-center leading-8">
           Automatizamos el proceso de analizar a tu competencia y nos aseguramos de que tomes decisiones estratégicas que impulsen el crecimiento de tu negocio.

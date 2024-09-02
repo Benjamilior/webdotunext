@@ -1,21 +1,19 @@
+import "./globals.css";
 import Image from "next/image";
 import Navbar from "@/app/navbar";
-import { MacbookScrollDemo } from "@/app/MacbookScrollDemo";
-import { StickyScrollRevealDemo } from "@/app/StickyScrollReveal";
-import  ComponentData from "../app/data";
-import { Footer } from "./footer";
-import Form from "./form";
 import { HeroScrollDemo} from "@/app/tablet";
-import  Testimonios  from "../components/ui/Testimonios";
-import "./globals.css";
-import  Component  from "../components/ui/ScrolljackingLayout";
 import {InfiniteMovingCardsDemo} from "../app/infinitemovingcard";
+import  Component  from "./ScrolljackingLayout";
+import  ComponentData from "../app/data";
+import  Testimonios  from "./Testimonios";
+import Form from "./form";
+import { Footer } from "./footer";
 
 
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-between  pb-0">
-      <Navbar/>
+      <Navbar />
       <HeroScrollDemo/>
       <InfiniteMovingCardsDemo/>
       <Component></Component>

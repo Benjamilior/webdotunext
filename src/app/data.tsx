@@ -9,42 +9,42 @@ export default function Component() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <Card className="bg-white/10 backdrop-blur-lg border-white/20">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-white">Sales Improvement</CardTitle>
+              <CardTitle className="text-sm font-medium text-white">Incremento en Unidades Vendidas</CardTitle>
               <ArrowUpIcon className="h-4 w-4 text-green-400" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-white">62%</div>
-              <p className="text-xs text-white/70">Increase in overall sales</p>
+              <p className="text-xs text-white/70">Sin sacrificar margen</p>
             </CardContent>
           </Card>
           <Card className="bg-white/10 backdrop-blur-lg border-white/20">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-white">New Customers</CardTitle>
+              <CardTitle className="text-sm font-medium text-white">Aumento en Margenes</CardTitle>
               <UsersIcon className="h-4 w-4 text-blue-400" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-white">+2,350</div>
-              <p className="text-xs text-white/70">New customers this quarter</p>
+              <div className="text-2xl font-bold text-white">3% - 5%</div>
+              <p className="text-xs text-white/70">En 1 año o menos desde implementación</p>
             </CardContent>
           </Card>
           <Card className="bg-white/10 backdrop-blur-lg border-white/20">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-white">Average Order Value</CardTitle>
+              <CardTitle className="text-sm font-medium text-white">Aumento en la rotación de inventario</CardTitle>
               <LineChartIcon className="h-4 w-4 text-orange-400" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-white">$245.80</div>
-              <p className="text-xs text-white/70">18% increase from last month</p>
+              <div className="text-2xl font-bold text-white">10%</div>
+              <p className="text-xs text-white/70">de aumento en la rapidez de rotación</p>
             </CardContent>
           </Card>
           <Card className="bg-white/10 backdrop-blur-lg border-white/20">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-white">Customer Retention</CardTitle>
+              <CardTitle className="text-sm font-medium text-white">Ahorro de tiempo</CardTitle>
               <BarChartIcon className="h-4 w-4 text-purple-400" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-white">89%</div>
-              <p className="text-xs text-white/70">5% increase in retention rate</p>
+              <div className="text-2xl font-bold text-white">300</div>
+              <p className="text-xs text-white/70">Horas ahorradas mensualmente</p>
             </CardContent>
           </Card>
         </div>

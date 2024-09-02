@@ -25,7 +25,7 @@ export default function Navbar() {
 
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <Link href="/quienes-somos" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
+              <Link href="https://www.linkedin.com/company/dotu-io" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
                 Quiénes somos
               </Link>
               <Link href="/clientes" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
@@ -34,7 +34,7 @@ export default function Navbar() {
               <Link href="/clientes" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
                 Clientes
               </Link>
-              <Link href="/contacto" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
+              <Link href="/pricing" className="text-primarydotu hover:text-secondarydotu px-3 py-2 rounded-md text-xl font-medium">
                 Precio
               </Link>
              
@@ -42,7 +42,7 @@ export default function Navbar() {
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
             <Button className="mr-2 bg-fourthdotu hover:bg-secondarydotu">
-              Agendar una demo
+              Agenda tu demo
             </Button>
             
           </div>

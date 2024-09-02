@@ -42,15 +42,15 @@ export function Footer() {
                       <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Encuéntranos</h2>
                       <ul className="text-white dark:text-gray-400 font-medium">
                           <li className="mb-4">
-                              <a href="#" className="hover:underline">Cerro el Plomo #5931, Of. 1213</a>
+                              <a href="https://www.google.com/maps/place/Cerro+El+Plomo+5931,+Oficina+1213,+7550000+Las+Condes,+Regi%C3%B3n+Metropolitana/data=!4m2!3m1!1s0x9662ced9184f0001:0xfe4a85159b017228?sa=X&ved=1t:242&ictx=111" className="hover:underline">Cerro el Plomo #5931, Of. 1213</a>
                           </li>
                           <li>
-                              <a href="#" className="hover:underline">Las Condes</a>
+                              <a href="#" className="">Las Condes</a>
                               
                           </li>
                           <li>
                               
-                              <a href="#" className="hover:underline">Santiago de Chile</a>
+                              <a href="#" className="">Santiago de Chile</a>
                           </li>
                       </ul>
                   </div>
