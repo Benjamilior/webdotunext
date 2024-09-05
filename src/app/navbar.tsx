@@ -41,12 +41,14 @@ export default function Navbar() {
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
-            <Button className="mr-2 bg-fourthdotu hover:bg-secondarydotu">
-              Agenda tu demo
-            </Button>
-            
-          </div>
+  <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3c4LWMM1YvEpxa-P9u9AJ04XtS7jzdd2NgIQ2yjjDndyIaouBCwIQ--B9rffq95obwi4ZPmx2N">
+    <Button className="mr-2 bg-fourthdotu hover:bg-secondarydotu">
+      Agenda tu demo
+    </Button>
+  </Link>
+</div>
           <div className="-mr-2 flex items-center sm:hidden">
+            <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3c4LWMM1YvEpxa-P9u9AJ04XtS7jzdd2NgIQ2yjjDndyIaouBCwIQ--B9rffq95obwi4ZPmx2N">
             <Button
               variant="ghost"
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
@@ -63,6 +65,7 @@ export default function Navbar() {
                 </svg>
               )}
             </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -71,7 +74,7 @@ export default function Navbar() {
         <div className="sm:hidden max-h-4 mt-20 fixed inset-0 bg-white
          shadow-md z-50" >
           <div className="pt-2 pb-3 space-y-1 bg-white">
-            <Link href="/quienes-somos" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+            <Link href="https://www.linkedin.com/company/dotu-io" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
               Quiénes somos
             </Link>
             <Link href="/productos" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
@@ -80,18 +83,14 @@ export default function Navbar() {
             <Link href="/clientes" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
               Clientes
             </Link>
-            <Link href="/contacto" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+            <Link href="/pricing" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
               Precio
             </Link>
-            <Link href="/contacto" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-              Planes
-            </Link>
-           
           </div>
           <div className="pt-4 pb-3 border-t bg-slate-50 border-gray-200">
             
             <div className="mt-3 flex items-center px-4">
-              <Button className="w-full bg-fourthdotu">
+              <Button  className="w-full  bg-fourthdotu">
                 Agendar una demo
               </Button>
             </div>

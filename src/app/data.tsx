@@ -33,8 +33,8 @@ export default function Component() {
               <LineChartIcon className="h-4 w-4 text-orange-400" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-white">10%</div>
-              <p className="text-xs text-white/70">de aumento en la rapidez de rotación</p>
+              <div className="text-2xl font-bold text-white">11%</div>
+              <p className="text-xs text-white/70">en 3 meses</p>
             </CardContent>
           </Card>
           <Card className="bg-white/10 backdrop-blur-lg border-white/20">

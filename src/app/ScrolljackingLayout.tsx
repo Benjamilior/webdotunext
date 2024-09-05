@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import ComponentKPI from '../components/ui/kpialert'
+import VeldeComponent from "../components/ui/veldekpi"
+import YellowComponent from "../components/ui/yellowkpi"
+import RedKPI from '@/components/ui/redkpi'
+import Img1 from "../components/ui/img1"
+import Img2 from "../components/ui/Img2"
+import Img3 from "../components/ui/img3"
+import Img4 from "../components/ui/img4"
 
 export default function Component() {
   const sectionsRef = useRef<(HTMLDivElement | null)[]>([])
@@ -31,6 +38,42 @@ export default function Component() {
     return () => observer.disconnect()
   }, [])
 
+  // Función para seleccionar el componente KPI correcto
+  const renderKPIComponent = (index: number) => {
+    switch (index) {
+      case 0:
+        return <RedKPI />
+      case 3:
+        return <YellowComponent />
+      case 1:
+        return <VeldeComponent />
+      case 2:
+        return <ComponentKPI />
+      default:
+        return null
+    }
+  }
+
+  // Función para renderizar las imágenes específicas
+  const renderImage = (index: number) => {
+    switch (index) {
+      case 0:
+        return <Img1 />
+      case 1:
+        return <Img3 />
+      case 2:
+        return <Img4 />
+      case 3:
+        return <Img2 />
+      default:
+        return (
+          <div className="bg-gradient-to-br from-primary/20 to-primary/40 w-full h-64 rounded-lg shadow-inner flex items-center justify-center text-primary-foreground font-bold text-xl">
+            Imagen {index + 1}
+          </div>
+        )
+    }
+  }
+
   return (
     <div className="w-full bg-gradient-to-b from-gray-50 to-gray-100">
       <div className='mt-[100px] p-8 text-center sm:w-1/2 sm:mx-auto'>
@@ -38,7 +81,7 @@ export default function Component() {
           <span className="block text-primarydotu mb-2">Solución para Retailers</span>
         </h1>
         <p className="mt-6 text-xl sm:text-2xl text-center leading-8 text-secondarydotu">
-          Automatizamos el proceso de analizar a tu competencia y nos aseguramos de que tomes decisiones estratégicas que impulsen el crecimiento de tu negocio.
+          Software que automatiza el control de tus productos, monitorea las acciones de tu competencia y mantente siempre competitivo.
         </p>
       </div>
 
@@ -55,17 +98,15 @@ export default function Component() {
           <Card className="container mx-auto p-8 bg-white/80 backdrop-blur-sm shadow-lg">
             <div className={`flex flex-col md:flex-row items-center ${section.imageLeft ? 'md:flex-row-reverse' : ''} gap-8`}>
               <div className="md:w-1/2">
-                <div className="bg-gradient-to-br from-primary/20 to-primary/40 w-full h-64 rounded-lg shadow-inner flex items-center justify-center text-primary-foreground font-bold text-xl">
-                  Imagen {index + 1}
-                </div>
+                {renderImage(index)} {/* Renderiza la imagen correspondiente */}
                 <div className="w-full mt-4">
-                  <ComponentKPI></ComponentKPI> {/* Inserta aquí tu componente de alerta */}
+                  {renderKPIComponent(index)} {/* Renderiza el componente KPI correspondiente */}
                 </div>
               </div>
               <div className="md:w-1/2">
                 <h2 className="text-3xl font-bold mb-4 text-primary">{section.title}</h2>
                 {section.subtitle && <h3 className="text-xl mb-4 text-primary/80">{section.subtitle}</h3>}
-                <p className="mb-6 text-gray-600">{section.content}</p>
+                <p className="mb-6 text-xl text-gray-600">{section.content}</p>
               </div>
             </div>
           </Card>
@@ -79,30 +120,28 @@ const sections = [
   {
     title: "1. Monitoreo de Precios",
     subtitle: "",
-    content: "Compara tus precios con la competencia y analiza tu competitividad en el mercado. Automatiza la recopilación y análisis de datos, optimiza recursos, y enfócate en áreas clave. Identifica oportunidades para mejorar, descubre productos con mayor diferencia de precios y ajusta tu estrategia para maximizar márgenes. Accede a históricos detallados y toma decisiones estratégicas con confianza.",
+    content: "Compara tus precios con la competencia y analiza tu competitividad en el mercado. Automatiza la recopilación y análisis de datos. Descubre productos con mayor diferencia de precios y ajusta tu estrategia para maximizar márgenes.",
     imageLeft: true,
   },
   {
     title: "2. Recibe alertas de variación de precios",
-    content: "Mantente siempre un paso adelante de la competencia con nuestras alertas personalizadas de variación de precios. Recibe notificaciones en tiempo real cuando ocurran cambios significativos en los precios de tus productos y los de la competencia.",
+    content: "Mantente siempre un paso adelante de la competencia con nuestras alertas personalizadas de variación de precios. Recibe notificaciones en cuando ocurran cambios significativos en los precios de tus productos y los de la competencia.",
     imageLeft: false,
     ctaText: "Configura alertas",
     kpiContent: "Área de KPI 2" // Contenido específico para la zona de KPI
   },
   {
-    title: "3. Accion Sugerida",
-    content: "Nuestro sistema analiza continuamente los datos de precios y te ofrece sugerencias concretas y personalizadas sobre cómo ajustar tus precios para aumentar tus ingresos y mejorar tu competitividad. Ya sea una pequeña reducción para captar más clientes o un ajuste estratégico para maximizar tus márgenes, nuestras recomendaciones te proporcionan la guía necesaria para tomar decisiones efectivas y oportunas. Optimiza tus precios de manera inteligente y mantén a tu negocio en la cima del mercado.",
+    title: "3. Precio Historico",
+    content: "Mantén el control total sobre el comportamiento de precios de tus productos a lo largo del tiempo con nuestro sistema avanzado de seguimiento histórico. Conoce cómo han fluctuado los precios no solo de tus propios productos, sino también los de la competencia, y utiliza esa valiosa información para tomar decisiones estratégicas informadas.",
     imageLeft: true,
     ctaText: "Optimiza ahora",
     kpiContent: "Área de KPI 3" // Contenido específico para la zona de KPI
   },
   {
     title: "4. Stock Disponible",
-    content: "Nuestro sistema analiza continuamente los datos de precios y te ofrece sugerencias concretas y personalizadas sobre cómo ajustar tus precios para aumentar tus ingresos y mejorar tu competitividad. Ya sea una pequeña reducción para captar más clientes o un ajuste estratégico para maximizar tus márgenes, nuestras recomendaciones te proporcionan la guía necesaria para tomar decisiones efectivas y oportunas. Optimiza tus precios de manera inteligente y mantén a tu negocio en la cima del mercado.",
+    content: "Obtén una ventaja competitiva al monitorear el stock disponible de tus competidores. Con nuestra herramienta avanzada de análisis de stock, podrás identificar oportunidades estratégicas para aumentar tus ventas al saber cuándo tus competidores enfrentan desabastecimiento.",
     imageLeft: false,
     ctaText: "Optimiza ahora",
     kpiContent: "Área de KPI 3" // Contenido específico para la zona de KPI
   },
-  
 ]
-
