@@ -213,7 +213,7 @@ export default function PricingSheet() {
                                 </tbody>
                               </table>
                             </div>
-                            <OnlineComponent></OnlineComponent>
+                          
                           </div>
                         </td>
                       </tr>
