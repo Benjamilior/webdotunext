@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 
 export const InfiniteMovingCards = ({
@@ -21,14 +21,9 @@ export const InfiniteMovingCards = ({
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
-
-  useEffect(() => {
-    addAnimation();
-  }, []);
-
   const [start, setStart] = useState(false);
 
-  function addAnimation() {
+  const addAnimation = useCallback(() => {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
@@ -43,7 +38,11 @@ export const InfiniteMovingCards = ({
       getSpeed();
       setStart(true);
     }
-  }
+  }, [direction, speed]);
+
+  useEffect(() => {
+    addAnimation();
+  }, [addAnimation]);
 
   const getDirection = () => {
     if (containerRef.current) {
@@ -87,14 +86,13 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            // Cambio del Tamaño
             className="w-[350px] h-[115px] sm:h-[130px] sm:w-[400px] max-w-full relative rounded-2xl flex-shrink-0 overflow-hidden"
           >
             <Image
               src={item.imageUrl}
               alt={`Image ${idx + 1}`}
-              width={100} // Ajusta según el tamaño deseado
-              height={100} // Ajusta según el tamaño deseado
+              width={100}
+              height={100}
               className="w-full h-full object-cover"
             />
           </li>
