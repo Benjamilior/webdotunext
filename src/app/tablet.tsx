@@ -3,6 +3,9 @@ import React from "react";
 import { ContainerScroll } from "../components/ui/container-scroll-animation";
 import Component from "./forMacbook";
 import Image from "next/image";
+import PricingSheet from "./principal";
+import RetailDashboard from "./principal2";
+import OnlineComponent from "./onlinestock"
 
 export function HeroScrollDemo() {
   return (
@@ -12,15 +15,9 @@ export function HeroScrollDemo() {
           <Component ></Component>
         }
       >
-        <Image
-          src={`/linear.webp`}
-          alt="hero"
-          height={720}
-          width={1400}
-          className="mx-auto rounded-2xl object-cover h-full object-left-top"
-          draggable={false}
-        />
+       <RetailDashboard></RetailDashboard>
       </ContainerScroll>
+       
     </div>
   );
 }

@@ -127,7 +127,7 @@ export default function Component() {
         <div className="flex justify-center gap-4 mt-4">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-[#8b5cf6]"></div>
-            <span className="text-sm">Tu marca</span>
+            <span className="text-sm">Tu Negocio</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-[#60606b]"></div>
