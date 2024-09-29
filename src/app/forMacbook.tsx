@@ -10,7 +10,7 @@ export default function Component() {
           <span className="block ">para aumentar tus ventas</span>
         </h1>
         <p className="mt-6 text-xl sm:text-2xl text-center leading-8">
-          Automatizamos el proceso de analizar a tu competencia y nos aseguramos de que tomes decisiones estratégicas que impulsen el crecimiento de tu negocio.
+          Automatizamos el proceso de analizar a tu competencia, te ayudamos a que tomes decisiones estratégicas que impulsen el crecimiento de tu negocio.
         </p>
         <div className="mt-12 grid gap-8 sm:grid-cols-3 text-center">
           <div className="flex flex-col items-center">

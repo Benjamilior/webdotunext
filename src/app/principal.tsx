@@ -6,18 +6,18 @@ import OnlineComponent from "./onlinestock"
 export default function PricingSheet() {
     // Inicializa con la primera fila expandida
     const [expandedRow, setExpandedRow] = useState<number | null>(0);
-    
+    2
     const toggleRow = (index: number) => {
         setExpandedRow(expandedRow === index ? null : index);
     };
     
     const data = [
       { 
-        product: 'Widget A', 
-        yourPrice: 19.99, 
-        competitor1: 22.99, 
-        competitor2: 21.50, 
-        competitor3: 20.75,
+        product: 'Prodcuto A', 
+        yourPrice: 19.990, 
+        competitor1: 22.990, 
+        competitor2: 21.500, 
+        competitor3: 20.750,
         profitMargin: 15,
         marketPosition: 'Competitive',
         salesTrend: 'Up 5%',
@@ -25,17 +25,17 @@ export default function PricingSheet() {
         customerLifetimeValue: '$150',
         marketShare: '22%',
         kpis: {
-          price: { min: 19.99, max: 22.99, avg: 21.31 },
+          price: { min: 19.990, max: 22.990, avg: 21.310 },
           margin: { min: 12, max: 18, avg: 15 },
           sales: { min: 1000, max: 1500, avg: 1250 }
         }
       },
       { 
-        product: 'Gadget B', 
-        yourPrice: 34.99, 
-        competitor1: 32.99, 
-        competitor2: 36.50, 
-        competitor3: 33.75,
+        product: 'Producto B', 
+        yourPrice: 34.990, 
+        competitor1: 32.990, 
+        competitor2: 36.500, 
+        competitor3: 33.750,
         profitMargin: 20,
         marketPosition: 'Leader',
         salesTrend: 'Up 8%',
@@ -49,11 +49,11 @@ export default function PricingSheet() {
         }
       },
       { 
-        product: 'Tool C', 
-        yourPrice: 15.99, 
-        competitor1: 17.99, 
-        competitor2: 14.50, 
-        competitor3: 16.75,
+        product: 'Producto C', 
+        yourPrice: 15.990, 
+        competitor1: 17.990, 
+        competitor2: 14.500, 
+        competitor3: 16.750,
         profitMargin: 12,
         marketPosition: 'Challenger',
         salesTrend: 'Up 3%',
@@ -67,7 +67,7 @@ export default function PricingSheet() {
         }
       },
       { 
-        product: 'Device D', 
+        product: 'Producto Z', 
         yourPrice: 49.99, 
         competitor1: 52.99, 
         competitor2: 48.50, 
@@ -85,7 +85,7 @@ export default function PricingSheet() {
         }
       },
       { 
-          product: 'Device D', 
+          product: 'Producto F', 
           yourPrice: 49.99, 
           competitor1: 52.99, 
           competitor2: 48.50, 
@@ -103,7 +103,7 @@ export default function PricingSheet() {
           }
         },
         { 
-          product: 'Device D', 
+          product: 'Producto G', 
           yourPrice: 49.99, 
           competitor1: 52.99, 
           competitor2: 48.50, 
@@ -121,7 +121,7 @@ export default function PricingSheet() {
           }
         },
         { 
-          product: 'Device D', 
+          product: 'Producto Z', 
           yourPrice: 49.99, 
           competitor1: 52.99, 
           competitor2: 48.50, 
@@ -205,7 +205,7 @@ export default function PricingSheet() {
                                     <td className="px-2 py-1 text-right">{row.kpis.margin.avg}%</td>
                                   </tr>
                                   <tr>
-                                    <td className="px-2 py-1 font-medium">Ventas (unidades)</td>
+                                    <td className="px-2 py-1 font-medium">Unidades vendidas</td>
                                     <td className="px-2 py-1 text-right">{row.kpis.sales.min}</td>
                                     {/* <td className="px-2 py-1 text-right">{row.kpis.sales.max}</td>
                                     <td className="px-2 py-1 text-right">{row.kpis.sales.avg}</td> */}

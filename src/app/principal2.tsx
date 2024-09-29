@@ -18,7 +18,7 @@ export default function RetailDashboard() {
 
       </div>
 
-      <div className="grid grid-cols-5 gap-4 mb-6">
+      <div className="hidden sm:grid grid-cols-5 gap-4 mb-6">
         {[3.230, 3.150, 27,350,3].map((stat, index) => (
           <Card key={index} className="bg-white shadow">
             <CardContent className="p-4">
