@@ -41,7 +41,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
-  <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3c4LWMM1YvEpxa-P9u9AJ04XtS7jzdd2NgIQ2yjjDndyIaouBCwIQ--B9rffq95obwi4ZPmx2N">
+  <Link href="https://bmunoz.youcanbook.me/">
     <Button className="mr-2 bg-fourthdotu hover:bg-secondarydotu">
       Agenda tu demo
     </Button>

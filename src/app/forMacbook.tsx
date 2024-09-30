@@ -27,7 +27,7 @@ export default function Component() {
           </div>
         </div>
         <div className="mt-12 text-center">
-          <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3c4LWMM1YvEpxa-P9u9AJ04XtS7jzdd2NgIQ2yjjDndyIaouBCwIQ--B9rffq95obwi4ZPmx2N">
+          <Link href="https://bmunoz.youcanbook.me/">
           <Button size="lg" className="bg-white text-purple-700 hover:bg-purple-100 transition-colors">
             Agenda tu demo
             <ArrowRight className="ml-2 h-5 w-5" />

@@ -42,7 +42,7 @@ export default function PricingPage() {
               <li className="flex items-center  text-primarydotu"><Check className="mr-2 text-green-500" /> Reporte de Stock de Competidores</li>
             </ul>
           </CardContent>
-            <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3c4LWMM1YvEpxa-P9u9AJ04XtS7jzdd2NgIQ2yjjDndyIaouBCwIQ--B9rffq95obwi4ZPmx2N">
+            <Link href="https://bmunoz.youcanbook.me/">
           <CardFooter>
             <Button className="w-full  bg-fourthdotu">Agenda tu demo</Button>
           </CardFooter>
@@ -117,7 +117,7 @@ export default function PricingPage() {
               <li className="flex items-center  text-primarydotu"><Check className="mr-2 text-green-500" /> Reporte de Stock de Competidores</li>
             </ul>
           </CardContent>
-          <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3c4LWMM1YvEpxa-P9u9AJ04XtS7jzdd2NgIQ2yjjDndyIaouBCwIQ--B9rffq95obwi4ZPmx2N">
+          <Link href="https://bmunoz.youcanbook.me/">
           <CardFooter className="flex flex-col items-stretch">
             <Button className="w-full mb-2 bg-fourthdotu">Agenda tu demo</Button>
             
