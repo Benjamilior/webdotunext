@@ -138,8 +138,8 @@ const sections = [
     kpiContent: "Área de KPI 3" // Contenido específico para la zona de KPI
   },
   {
-    title: "4. Stock Disponible",
-    content: "Obtén una ventaja competitiva al monitorear el stock disponible de tus competidores. Con nuestra herramienta avanzada de análisis de stock, podrás identificar oportunidades estratégicas para aumentar tus ventas al saber cuándo tus competidores enfrentan desabastecimiento.",
+    title: "4. Quiebres de Stock",
+    content: "Obtén información del momento en que tus productos o los de tu competencia se quedan sin disponibilidad de cara al consumidor.",
     imageLeft: false,
     ctaText: "Optimiza ahora",
     kpiContent: "Área de KPI 3" // Contenido específico para la zona de KPI
