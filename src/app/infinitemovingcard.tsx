@@ -31,6 +31,6 @@ const testimonials = [
   { imageUrl: "/logos/ferresur.png"},
   { imageUrl: "/logos/grupos.png"},
   { imageUrl: "/logos/uai.png"},
-  { imageUrl: "/logos/santo-tomas.png" },
+  // { imageUrl: "/logos/santo-tomas.png" },
 ]
 
