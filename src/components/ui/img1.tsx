@@ -26,7 +26,7 @@ export default function Img1() {
           className="bg-indigo-600 rounded-xl p-4 mb-4"
         >
           <p className="text-white text-center text-lg mb-2">Tu precio</p>
-          <p className="text-white text-center text-5xl font-bold">$ 22.990</p>
+          <p className="text-4xl text-white text-center sm:text-5xl font-bold">$ 22.990</p>
         </motion.div>
         <motion.div
           initial={{ y: 20, opacity: 0 }}
@@ -35,7 +35,7 @@ export default function Img1() {
           className="bg-gray-100 rounded-xl p-4"
         >
           <p className="text-gray-600 text-center text-lg mb-2">Precio de la competencia</p>
-          <p className="text-indigo-600 text-center text-5xl font-bold">$ 18.990</p>
+          <p className="text-indigo-600 text-center sm:text-5xl font-bold text-4xl">$ 18.990</p>
         </motion.div>
       </motion.div>
     </div>

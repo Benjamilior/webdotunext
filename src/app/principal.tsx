@@ -13,7 +13,7 @@ export default function PricingSheet() {
     
     const data = [
       { 
-        product: 'Prodcuto A', 
+        product: 'Producto A', 
         yourPrice: 19.990, 
         competitor1: 22.990, 
         competitor2: 21.500, 
