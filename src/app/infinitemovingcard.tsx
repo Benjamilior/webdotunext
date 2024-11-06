@@ -4,14 +4,16 @@ import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
+  
   return (
     <div className="w-full h-auto mt-8">
-      {/* Maneja la altura del componente papa */}
+      {/* Maneja la altura del componente */}
     <div className=" w-full h-[150px] rounded-md flex flex-col antialiased  dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
         speed="normal"
+        
       />
     </div>
     
@@ -26,10 +28,13 @@ export function InfiniteMovingCardsDemo() {
 }
 
 const testimonials = [
-  { imageUrl: "/logos/tejacolor.png"},
+  //No Check
+  // { imageUrl: "/logos/tejacolor.png"},
+  { imageUrl: "/logos/tejasmarket.svg", width: "50px", height: "100px"},
+  { imageUrl: "/logos/ferresurhoy.svg", width: "1000px", height: "1000px"},
+  // { imageUrl: "/logos/grupos.png"},
   { imageUrl: "/logos/petvets.png"},
-  { imageUrl: "/logos/ferresur.png"},
-  { imageUrl: "/logos/grupos.png"},
+  //Check
   { imageUrl: "/logos/uai.png"},
   { imageUrl: "/logos/santo-tomas.png" },
 ]
