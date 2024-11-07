@@ -8,11 +8,11 @@ export function InfiniteMovingCardsDemo() {
   return (
     <div className="w-full h-auto mt-8">
       {/* Maneja la altura del componente */}
-    <div className=" w-full h-[100px] rounded-md flex flex-col antialiased  dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center overflow-hidden">
+    <div className=" w-full h-[150px] rounded-md flex flex-col antialiased  dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="fast"
+        speed="normal"
         
       />
     </div>
@@ -29,15 +29,18 @@ export function InfiniteMovingCardsDemo() {
 
 const testimonials = [
   //No Check
-  { imageUrl: "/logos/ferresurhoy.svg", width:150 , height:100},
-  { imageUrl: "/logos/petvetshoy.svg", width:200 , height:170 },//ok
- 
-  { imageUrl: "/logos/tejamañana.svg", width:140 , height:520 }, //ok
-  { imageUrl: "/logos/gruproshoy.svg", width:10 , height:10 },
+  { imageUrl: "/logos/ferresurhoy.svg", width:250 , height:150},
+  { imageUrl: "/logos/petvetshoy.svg", width:150 , height:150 },//ok
+  
   
   //Check
-  { imageUrl: "/logos/uai.png", width:100 , height:100},
-  { imageUrl: "/logos/santo-tomas.png", width:100 , height:100 },
+  { imageUrl: "/logos/uai.svg", width:220 , height:150},
+  { imageUrl: "/logos/santo-tomas.png", width:220 , height:150 },
+  
+  { imageUrl: "/logos/tejamañana.svg", width:160 , height:150 }, //ok
+ 
+  { imageUrl: "/logos/gruproshoy.svg", width:150 , height:150 },
+ 
 
 ]
 

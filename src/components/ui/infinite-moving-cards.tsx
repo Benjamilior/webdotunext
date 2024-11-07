@@ -6,6 +6,10 @@ type InfiniteMovingCardsProps = {
     imageUrl: string;
     width?: number;
     height?: number;
+    paddingTop?: number;
+    paddingBottom?: number;
+    paddingLeft?: number;
+    paddingRight?: number;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -71,7 +75,7 @@ export const InfiniteMovingCards: React.FC<InfiniteMovingCardsProps> = ({
   return (
     <div
       ref={containerRef}
-      className={`scroller relative z-20 max-w-7xl overflow-hidden w-full [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] ${className}`}
+      className={`scroller relative z-20 max-w-7xl overflow-hidden w-full  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] ${className}`}
     >
       <ul
         ref={scrollerRef}
@@ -82,15 +86,26 @@ export const InfiniteMovingCards: React.FC<InfiniteMovingCardsProps> = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="relative flex-shrink-0 overflow-hidden"
-            style={{ width: item.width || "100%", height: item.height || "100%" }}
+            className="relative sm:mx-8 flex-shrink-0 overflow-hidden flex items-center justify-center "
+            style={{
+              width: item.width || "100%",
+              height: item.height || "100%",
+              paddingTop: item.paddingTop || 0,
+              paddingBottom: item.paddingBottom || 0,
+              paddingLeft: item.paddingLeft || 0,
+              paddingRight: item.paddingRight || 0,
+            }}
           >
             <Image
               src={item.imageUrl}
               alt={`Image ${idx + 1}`}
               width={item.width || 100}
               height={item.height || 100}
-              className="object-cover"
+              className="object-contain"
+              style={{
+                objectFit: "contain",   // Asegura que la imagen no se distorsione
+                objectPosition: "center" // Centra la imagen
+              }}
             />
           </li>
         ))}
