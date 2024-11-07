@@ -30,10 +30,11 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   //No Check
   // { imageUrl: "/logos/tejacolor.png"},
-  { imageUrl: "/logos/tejasmarket.svg", width: "50px", height: "100px"},
+  { imageUrl: "/logos/tejahoy.svg", width: "50px", height: "100px"},
   { imageUrl: "/logos/ferresurhoy.svg", width: "1000px", height: "1000px"},
   // { imageUrl: "/logos/grupos.png"},
-  { imageUrl: "/logos/petvets.png"},
+  { imageUrl: "/logos/petvetshoy.svg"},
+  { imageUrl: "/logos/gruproshoy.svg"},
   //Check
   { imageUrl: "/logos/uai.png"},
   { imageUrl: "/logos/santo-tomas.png" },
