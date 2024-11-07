@@ -1,20 +1,24 @@
 import React, { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 
-export const InfiniteMovingCards = ({
-  items,
-  direction = "left",
-  speed = "fast",
-  pauseOnHover = true,
-  className,
-}: {
+type InfiniteMovingCardsProps = {
   items: {
     imageUrl: string;
+    width?: number;
+    height?: number;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
+};
+
+export const InfiniteMovingCards: React.FC<InfiniteMovingCardsProps> = ({
+  items,
+  direction = "left",
+  speed = "fast",
+  pauseOnHover = true,
+  className,
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
@@ -31,7 +35,7 @@ export const InfiniteMovingCards = ({
 
   const getSpeed = useCallback(() => {
     if (containerRef.current) {
-      const speedMap = {
+      const speedMap: { [key: string]: string } = {
         fast: "20s",
         normal: "40s",
         slow: "80s",
@@ -78,14 +82,15 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="w-[350px] h-[115px] sm:h-[130px] sm:w-[400px] max-w-full relative rounded-2xl flex-shrink-0 overflow-hidden"
+            className="relative flex-shrink-0 overflow-hidden"
+            style={{ width: item.width || "100%", height: item.height || "100%" }}
           >
             <Image
               src={item.imageUrl}
               alt={`Image ${idx + 1}`}
-              width={100}
-              height={100}
-              className="w-full h-full object-cover"
+              width={item.width || 100}
+              height={item.height || 100}
+              className="object-cover"
             />
           </li>
         ))}
