@@ -29,17 +29,17 @@ export function InfiniteMovingCardsDemo() {
 
 const testimonials = [
   //No Check
-  { imageUrl: "/logos/ferresurhoy.svg", width:250 , height:150},
-  { imageUrl: "/logos/petvetshoy.svg", width:150 , height:150 },//ok
+  { imageUrl: "/logos/ferresurhoy.svg", width:220 , height:150},
+  { imageUrl: "/logos/petvetshoy.svg", width:220 , height:150 },//ok
   
   
   //Check
   { imageUrl: "/logos/uai.svg", width:220 , height:150},
   { imageUrl: "/logos/santo-tomas.png", width:220 , height:150 },
   
-  { imageUrl: "/logos/tejamañana.svg", width:160 , height:150 }, //ok
+  { imageUrl: "/logos/tejamañana.svg", width:200 , height:150 }, //ok
  
-  { imageUrl: "/logos/gruproshoy.svg", width:150 , height:150 },
+  { imageUrl: "/logos/gruproshoy.svg", width:220 , height:150 },
  
 
 ]
