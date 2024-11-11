@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Soluciones Dotu",
   description: "Inteligencia de precios para el retail",
   icons: {
-    icon: "/dotu_morado.svg",
+    icon: "/dotulogo.svg",
   }
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
     <>
       <Head>
         {/* Cambia el type para SVG */}
-        <link rel="icon" href="/dotu_morado.svg" type="image/svg+xml" />
+        <link rel="icon" href="/dotulogo.svg" type="image/svg+xml" />
         <title>Dotu</title>
         <meta
           name="description"

@@ -39,7 +39,7 @@ export default function Component() {
           </Card>
           <Card className="bg-white/10 backdrop-blur-lg border-white/20">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-white">Ahorro de tiempo</CardTitle>
+              <CardTitle className="text-sm font-medium text-white">Ahorro en tiempo</CardTitle>
               <BarChartIcon className="h-4 w-4 text-purple-400" />
             </CardHeader>
             <CardContent>
