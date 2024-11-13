@@ -28,11 +28,12 @@ export function InfiniteMovingCardsDemo() {
 }
 
 const testimonials = [
-  { imageUrl: "/logos/ferresurhoy.svg", width:220 , height:150},
+  { imageUrl: "/logos/ferresurhoy.svg", width:250 , height:150},
   { imageUrl: "/logos/petvetshoy.svg", width:220 , height:150 },
   { imageUrl: "/logos/uai.svg", width:220 , height:150},
   { imageUrl: "/logos/santo-tomas.png", width:220 , height:150 },
   { imageUrl: "/logos/tejamañana.svg", width:200 , height:150 },
   { imageUrl: "/logos/gruproshoy.svg", width:220 , height:150 },
+  { imageUrl: "/logos/rc.svg", width:250 , height:150 },
  ]
 
