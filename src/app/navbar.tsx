@@ -61,7 +61,7 @@ export default function Navbar() {
   </g>
             </svg>
               
-              <span className="block sm:hidden ml-2 text-2xl font-bold text-secondarydotu">Dotu</span>
+              {/* <span className="block sm:hidden ml-2 text-2xl font-bold text-secondarydotu">Dotu</span> */}
 
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
@@ -88,7 +88,7 @@ export default function Navbar() {
   </Link>
 </div>
           <div className="-mr-2 flex items-center sm:hidden">
-            <Link href="">
+            <Link href="https://bmunoz.youcanbook.me/">
             <Button
               variant="ghost"
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
